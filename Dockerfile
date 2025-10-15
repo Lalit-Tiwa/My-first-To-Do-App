@@ -1,4 +1,11 @@
+# Use lightweight Nginx image
 FROM nginx:alpine
-COPY . /usr/www/nginx/html
+
+# Copy your HTML file into the default Nginx directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
-CMD ["nginex", "-g", "daemon off;"]
+
+# Start Nginx in foreground mode
+CMD ["nginx", "-g", "daemon off;"]
