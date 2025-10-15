@@ -25,3 +25,22 @@ todo-docker-app/
 │
 ├── index.html # Main application (HTML, CSS, JS)
 └── Dockerfile # Docker configuration for Nginx
+
+##RUN
+
+---
+
+## 🐳 Run the App with Docker
+
+### 1️⃣ Build Docker image
+
+docker build -t todo-app .
+
+2️⃣ Run the container:
+
+docker run -d -p 8080:80 todo-app
+
+
+
+
+
