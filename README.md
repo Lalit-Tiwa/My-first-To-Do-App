@@ -21,8 +21,8 @@ The app is containerized with **Docker** using a lightweight **Nginx** server fo
 
 ## 📁 Folder Structure
 
-todo-docker-app/
-│
+
+
 ├── index.html # Main application (HTML, CSS, JS)
 └── Dockerfile # Docker configuration for Nginx
 
